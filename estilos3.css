@@ -1,0 +1,79 @@
+*{
+    background-color: #F1EEDC;
+    padding: 0px;
+}
+footer {
+    background-color: #E5DDC5;
+   text-align: end;
+    /*position: absolute;*/
+    bottom: 0;
+    width: 99%;
+    padding: 0%;
+}
+
+.menu{
+    list-style: none;
+}
+.menu li a{
+    display: block;
+    padding: 5px;
+}
+.menu li{
+    display: inline-block;
+    text-align: center;
+}
+.facebook{
+    color: blue;
+    padding: 1px;
+}
+.twitter{
+    color: lightskyblue;
+    padding: 1px;
+}
+.whatsapp{
+    color: lightgreen;
+    padding: 1px;
+}
+.instagram{
+    color: mediumvioletred;
+    padding: 1px;
+}
+.mapa{
+    color: darkred;
+    padding: 1px;
+    
+}
+.copy{
+    color: black;
+}
+h3{
+    background-color:#E5DDC5;
+}
+#nombre{
+    color: black;
+    background-color:whitesmoke;
+}
+#email{
+    color: black;
+    background-color: whitesmoke;
+}
+#nombre{
+    color: black;
+    background-color:whitesmoke;
+}
+#email{
+    color: black;
+    background-color: whitesmoke;
+}
+#sus{
+    color: white;
+    background-color: black;
+    text-align: center;
+}
+body,form,label{
+    margin: 0;
+    padding: 0;
+    background: url(fondo2.jpg);   
+    background-size: cover;
+    background-position: center;
+}

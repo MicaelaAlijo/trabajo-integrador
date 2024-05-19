@@ -18,51 +18,7 @@ footer {
     width: 99%;
     padding: 0%;
 }
-#foto1{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto2{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto3{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto4{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto5{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto6{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto7{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto8{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#foto9{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
+
 .menu{
     list-style: none;
 }
@@ -102,4 +58,19 @@ footer {
 }
 .copy{
     color: black;
+}
+#silla1{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+#sillon1{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
+}
+#mesa1{
+    width: 300px;
+    height: 300px;
+    padding: 50px;
 }

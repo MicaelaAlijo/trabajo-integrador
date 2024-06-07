@@ -74,3 +74,31 @@ footer {
     height: 300px;
     padding: 50px;
 }
+@media (max-width: 767px) {
+    body {
+      display: block;}
+    
+    }
+  
+    header, main, aside {
+      margin: 10px 0;
+      text-align: end;
+    }
+    @media (min-width: 768px) {
+        body {
+          display: flex;
+          flex-direction: row;
+        }
+      
+        main {
+          flex: 3;
+        }
+      
+        aside {
+          flex: 1;
+        }
+      }
+.diseño{
+    display: grid;
+    grid-template-columns:auto;
+    align-items: end;

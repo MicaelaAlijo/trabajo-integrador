@@ -180,3 +180,18 @@ h3{
     cursor: pointer;
     transition: background-color 0.3s;
 }
+@media (max-width: 767px) {
+    body {
+      display: block;}
+    
+    }
+  
+    header, main, aside {
+      margin: 10px 0;
+      text-align: end;
+    }
+    .diseño{
+        display: grid;
+        grid-template-columns:auto;
+        align-items: end;
+    }

@@ -1,99 +1,131 @@
-*{
-    background-color: #F1EEDC;
-    padding: 0px;
-}
-footer {
-    background-color: #E5DDC5;
-   text-align: end;
-    /*position: absolute;*/
-    bottom: 0;
-    width: 99%;
-    padding: 0%;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
-.menu{
+html, body {
+    height: 100%; 
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #F1EEDC;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex-grow: 1; 
+}
+
+footer {
+    background-color: #E5DDC5;
+    text-align: end;
+    width: 99%;
+}
+
+
+header {
+    background-color: #E5DDC5;
+}
+
+.menu {
     list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
 }
-.menu li a{
-    display: block;
-    padding: 5px;
+
+.menu img {
+    height: 50px;
 }
-.menu li{
+
+.menu li {
     display: inline-block;
-    text-align: center;
 }
-.facebook{
-    color: blue;
-    padding: 1px;
-}
-.twitter{
-    color: lightskyblue;
-    padding: 1px;
-}
-.whatsapp{
-    color: lightgreen;
-    padding: 1px;
-}
-.instagram{
-    color: mediumvioletred;
-    padding: 1px;
-}
-.mapa{
-    color: darkred;
-    padding: 1px;
-    
-}
-.copy{
+
+.menu li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
     color: black;
 }
-h3{
-    background-color:#E5DDC5;
+
+.hamburger {
+    display: none; 
+    font-size: 26px;
+    margin-left: auto;
+    cursor: pointer;
 }
-#nombre{
-    color: black;
-    background-color:whitesmoke;
+
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu.show li {
+        display: block;
+    }
 }
-#email{
-    color: black;
-    background-color: whitesmoke;
+
+form,label {
+    background-image: url(fondo2.jpg);
+    background-size: cover;
 }
-#nombre{
-    color: black;
-    background-color:whitesmoke;
+
+form {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    border-radius: 8px;
 }
-#email{
-    color: black;
-    background-color: whitesmoke;
+
+input[type="text"],
+input[type="email"] {
+    width: 100%;
+    padding: 8px;
+    margin-top: 5px;
+    margin-bottom: 10px;
 }
-#sus{
+#sus {
     color: white;
     background-color: black;
     text-align: center;
 }
-body,form,label{
-    margin: 0;
-    padding: 0;
-    background: url(fondo2.jpg);   
-    background-size: cover;
-    background-position: center;
+.copy i { color: black; } 
+.facebook i { color: #3b5998; }
+.twitter i { color: #1DA1F2; }
+.whatsapp i { color: #25D366; }
+.instagram i { color: #C13584; }
+.mapa i { color: darkred; }
+
+.footer a {
+    /* Aseguramos que los enlaces no hereden colores del texto cercano (como 'copy') */
+    color: unset; 
+    text-decoration: none; /* Asegurar que no hay subrayado */
 }
-.contenedores a :hover{
+
+.footer a i {
+    display: inline-block; /* Necesario para que la transformación funcione */
+    transition: transform 0.3s ease;
+}
+
+.footer a:hover i {
     transform: scale(1.3);
-    transition: all ease 500ms
 }
-.diseño{
-    display: grid;
-    grid-template-columns:auto;
-    text-align: center;
-    
-}
-@media (max-width: 767px) {
-    body {
-      display: block;}
-    
-    }
-  
-    header, main, aside {
-      margin: 10px 0;
-      text-align: end;
-    }

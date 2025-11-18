@@ -1,104 +1,137 @@
-*{
-    background-color: #F1EEDC;
-    padding: 0px;
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
-h2{
+
+body {
+    background-color: #F1EEDC;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-color: #E5DDC5;
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 15px;
+}
+
+.menu img {
+    height: 50px;
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.menu li a {
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    color: black;
+}
+
+.hamburger {
+    display: none;
+}
+
+@media (max-width: 768px) {
+    .menu {
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .menu li {
+        display: none;
+        width: 100%;
+        text-align: left;
+    }
+
+    .hamburger {
+        display: block;
+        margin-left: auto;
+    }
+
+    .menu.show li {
+        display: block;
+    }
+}
+
+h2 {
     text-align: center;
     background-color: #E5DDC5;
 }
-.contenedores a :hover{
+
+.contenedores a:hover {
     transform: scale(1.3);
-    transition: all ease 500ms
+    transition: all ease 500ms;
 }
+
+.diseño {
+    display: grid;
+    grid-template-columns: auto;
+    align-items: end;
+}
+
 footer {
     background-color: #E5DDC5;
-   text-align: end;
-    /*position: absolute;*/
-    bottom: 0;
+    text-align: end;
     width: 99%;
     padding: 0%;
 }
 
-.menu{
-    list-style: none;
-}
-.menu li a{
-    display: block;
-    padding: 5px;
-}
-.menu li{
-    display: inline-block;
-    text-align: center;
-}
-#mueblesmica{
+#mueblesmica {
     padding-left: 120px;
     padding-right: 110px;
     padding-bottom: 15px;
 }
-.facebook{
-    color: blue;
-    padding: 1px;
+
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    width: 100%;
 }
-.twitter{
-    color: lightskyblue;
-    padding: 1px;
+
+#silla1,
+#sillon1,
+#mesa1 {
+    max-width: 280px;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    padding: 5px;
 }
-.whatsapp{
-    color: lightgreen;
-    padding: 1px;
+
+#silla1:hover,
+#sillon1:hover,
+#mesa1:hover {
+    transform: scale(1.03);
+    transition: all ease 300ms;
 }
-.instagram{
-    color: mediumvioletred;
-    padding: 1px;
+.copy i { color: black; } 
+.facebook i { color: #3b5998; }
+.twitter i { color: #1DA1F2; }
+.whatsapp i { color: #25D366; }
+.instagram i { color: #C13584; }
+.mapa i { color: darkred; }
+
+.footer a {
+    color: unset; 
+    text-decoration: none; /* Asegurar que no hay subrayado */
 }
-.mapa{
-    color: darkred;
-    padding: 1px;
-    
+
+.footer a i {
+    display: inline-block; /* Necesario para que la transformación funcione */
+    transition: transform 0.3s ease;
 }
-.copy{
-    color: black;
+
+.footer a:hover i {
+    transform: scale(1.3); /* Efecto de crecimiento */
 }
-#silla1{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#sillon1{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-#mesa1{
-    width: 300px;
-    height: 300px;
-    padding: 50px;
-}
-@media (max-width: 767px) {
-    body {
-      display: block;}
-    
-    }
-  
-    header, main, aside {
-      margin: 10px 0;
-      text-align: end;
-    }
-    @media (min-width: 768px) {
-        body {
-          display: flex;
-          flex-direction: row;
-        }
-      
-        main {
-          flex: 3;
-        }
-      
-        aside {
-          flex: 1;
-        }
-      }
-.diseño{
-    display: grid;
-    grid-template-columns:auto;
-    align-items: end;
